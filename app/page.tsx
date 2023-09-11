@@ -9,24 +9,28 @@ import PlayStoreBtn from '@/components/play-store-button'
 import Card from '@/components/card'
 import FeaturesCard from '@/components/features-card'
 import PeepsCard from '@/components/peeps-card'
+import ScrollIndicator from '@/components/scroll-indicator'
 
 export default function Home() {
   return (
     <main className="bg-landing-pattern min-h-screen items-center justify-betweeen bg-white pt-20 lg:pt-12">
       <section className="min-h-screen flex flex-col justify-center items-center gap-4 pb-5">
         <div className="mb-3 lg:flex items-center">
-            <Image src={giftImage} alt='gift' className='max-h-[450px] w-auto mx-auto'/>
+            <div className="flex flex-col items-center">
+              <Image src={giftImage} alt='gift' className='max-h-[450px] w-auto mx-auto'/>
+              <ExploreButton href="/about-us" className="mx-auto">Keşfet</ExploreButton>
+            </div>
             <div>
               <h1 className="capitalize text-4xl text-center my-5">Yeni Nesil Çekiliş Platformu</h1>
               <h3 className="text-xl font-bold text-center">KESiN platformuyla çekilişlere katılmak artık çok daha kolay!</h3>
+              <div className="flex flex-col lg:flex-row gap-3 justify-center items-center w-10/12 mx-auto mt-16">
+                <AppStoreBtn/>
+                <PlayStoreBtn/>
+              </div>
             </div>
         </div>
-        <div className="flex justify-center items-center gap-12 lg:justify-around mb-3 flex-col lg:flex-row">
-            <ExploreButton href="/about-us" className="mx-auto">Keşfet</ExploreButton>
-            <div className="flex flex-col gap-3 justify-center items-center w-10/12 mx-auto">
-              <AppStoreBtn/>
-              <PlayStoreBtn/>
-            </div>
+        <div className="mt-10">
+          <ScrollIndicator/>
         </div>
       </section>
       <section className="py-6 flex flex-col justify-between min-h-screen md:min-h-fit bg-white">

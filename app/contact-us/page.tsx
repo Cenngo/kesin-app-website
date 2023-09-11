@@ -1,6 +1,6 @@
 'use client'
 import { useRef, useState } from "react"
-import {SubmitHandler, useForm} from "react-hook-form"
+import * as reactHookForm from "react-hook-form"
 import peepsImage from '../../public/peeps_4.png'
 import Image from "next/image"
 
@@ -8,7 +8,6 @@ interface FormInputs {
     name: string,
     surname: string,
     email: string,
-    company: string,
     details: string
 }
 
@@ -16,8 +15,8 @@ export default function ContactUs() {
     const [status, setStatus] = useState({ submitted: false, submitting: false, info: { error: false, msg: "" } });
 
     const formRef = useRef(null);
-    const { register, handleSubmit, formState: {errors}} = useForm<FormInputs>();
-    const onSubmit: SubmitHandler<FormInputs> = async data => {
+    const { register, handleSubmit, formState: {errors}} = reactHookForm.useForm<FormInputs>();
+    const onSubmit: reactHookForm.SubmitHandler<FormInputs> = async data => {
         setStatus({ submitted: false, submitting: true, info: { error: false, msg: "" } });
 
         const res = await fetch('/api/contact-us', {
@@ -26,7 +25,6 @@ export default function ContactUs() {
                 name: data.name,
                 surname: data.surname,
                 email: data.email,
-                company: data.company,
                 details: data.details
             })
         });
@@ -44,24 +42,13 @@ export default function ContactUs() {
             <div className="md:container md:px-12 mx-auto order-2 pb-5">
                 <form className="bg-white/80 rounded-3xl w-full group p-6" onSubmit={handleSubmit(onSubmit)} ref={formRef}>
                     <div className="mb-5">
-                        <label htmlFor="name" className="block after:content-['*'] after:ml-0.5 after:text-red-500 font-bold">Ad</label>
+                        <label htmlFor="name" className="block after:content-['*'] after:ml-0.5 after:text-red-500 font-bold">Ad Soyad</label>
                         <input type="text" id="name" className="mt-1 px-3 py-2 bg-white/40 border shadow-sm
                         border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                         inline w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                        data-invalid:text-pink-600 peer" placeholder="Sercan"
+                        data-invalid:text-pink-600 peer" placeholder=""
                                {...register("name", {required: true})} data-invalid={!!errors.name}/>
                         {errors.name && <p className="mt-2 text-pink-600 text-sm">
-                            Lütfen doldurunuz.
-                        </p>}
-                    </div>
-                    <div className="mb-5">
-                        <label htmlFor="surname" className="block after:content-['*'] after:ml-0.5 after:text-red-500 font-bold">Soy Ad</label>
-                        <input type="text" id="name" className="mt-1 px-3 py-2 bg-white/40 border shadow-sm
-                        border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
-                        block w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                        data-invalid:text-pink-600 peer" placeholder="Kara" data-invalid={!!errors.surname}
-                                {...register("surname", {required: true})}/>
-                        {errors.surname && <p className="mt-2 text-pink-600 text-sm">
                             Lütfen doldurunuz.
                         </p>}
                     </div>
@@ -70,21 +57,11 @@ export default function ContactUs() {
                         <input type="email" id="email" className="mt-1 px-3 py-2 bg-white/40 border shadow-sm
                         border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                         block w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                        data-invalid:text-pink-600 peer z-0" placeholder="sercan@kesin.app" data-invalid={!!errors.email}
+                        data-invalid:text-pink-600 peer z-0" placeholder="" data-invalid={!!errors.email}
                             {...register("email", {required: true})}/>
                         {errors.email && <p className="mt-2 text-pink-600 text-sm">
                             Lütfen doldurunuz.
                         </p>}
-                    </div>
-                    <div className="mb-5">
-                        <label htmlFor="company" className="block after:ml-0.5 font-bold">
-                            Firma Adı
-                        </label>
-                        <input type="text" id="company" className="mt-1 px-3 py-2 bg-white/40 border shadow-sm
-                        border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
-                        block w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                        data-invalid:text-pink-600 peer" placeholder="" data-invalid={!!errors.company}
-                            {...register("company", {required: false})}/>
                     </div>
                     <div className="mb-5">
                         <label htmlFor="details" className="block after:content-['*'] after:ml-0.5 after:text-red-500 font-bold">
