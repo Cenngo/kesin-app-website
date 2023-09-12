@@ -26,17 +26,8 @@ export async function POST(req: Request): Promise<Response> {
                             "inline": true
                         },
                         {
-                            "name": `Soy Ad`,
-                            "value": body.surname,
-                            "inline": true
-                        },
-                        {
                             "name": `Email`,
                             "value": body.email
-                        },
-                        {
-                            "name": `Firma`,
-                            "value": body.company
                         },
                         {
                             "name": `Detaylar`,

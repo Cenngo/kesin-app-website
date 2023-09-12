@@ -6,7 +6,6 @@ import Image from "next/image"
 
 interface FormInputs {
     name: string,
-    surname: string,
     email: string,
     details: string
 }
@@ -23,7 +22,6 @@ export default function ContactUs() {
             method: 'POST',
             body: JSON.stringify({
                 name: data.name,
-                surname: data.surname,
                 email: data.email,
                 details: data.details
             })
