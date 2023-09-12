@@ -77,7 +77,7 @@ export default function ContactUs() {
                     <div className="mb-5">
                         <input type="submit" className="bg-secondary text-white p-3 rounded-xl mr-2 cursor-pointer enabled:hover:bg-primary disabled:opacity-50" value="Gönder" disabled={status.submitted}/>
                         {status.submitted && !status.info.error && (
-                            <span className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">{status.info.msg}</span>
+                            <span className="bg-tertiary border text-white px-4 py-3 rounded relative" role="alert">{status.info.msg}</span>
                         )}
                         {status.submitted && status.info.error && (
                             <span className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">{status.info.msg}</span>
