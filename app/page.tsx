@@ -19,7 +19,7 @@ export default function Home() {
       <section className="min-h-screen flex flex-col justify-center items-center gap-4 pb-5 relative">
         <Image src={divier} alt='divider' className="w-full absolute top-0 left-0"/>
         <div className="mb-3 relative z-10 pt-20">
-            <div className="text-base max-w-[657px] mb-10">
+            <div className="text-b max-w-[657px] mb-10">
               <h1 className="capitalize text-5xl text-black text-center my-5">Yeni Nesil Çekiliş Platformu</h1>
               <h3 className="text-lg text-center">KESiN kullanıcıları çekilişleri rahatlıkla görebiliyor, katılım koşullarını uygulayarak hızlıca katılabiliyor ve sonuçları kolaylıkla takip edebiliyor.</h3>
             </div>
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col justify-between items-center min-h-screen md:min-h-fit bg-[#f1f1f1] pb-24">
         <div className="container mx-auto">
-          <h4 className="text-5xl font-bold text-center my-5 text-base max-w-[597px] mx-auto">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
+          <h4 className="text-5xl font-bold text-center my-5 text-b max-w-[597px] mx-auto">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
           <ul className="gap-5 flex flex-col lg:flex-row mx-2 justify-center place-items-center items-stretch">
               <li className="flex-1 basis-0">
                   <FeaturesCard image={glassImage} title="Görebilmek">

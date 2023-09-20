@@ -22,7 +22,7 @@ module.exports = {
         highlight: '#0D4E97',
         'card-border': '#ADCEFF',
         'card-light': '#E4EFFF',
-        base: '#2A2A2A',
+        b: '#2A2A2A',
         background: '#E1E1E1'
       },
       data: {
