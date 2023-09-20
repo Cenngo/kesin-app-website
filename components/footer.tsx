@@ -4,9 +4,9 @@ import logoImage from "../public/logo.png"
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-900 w-full text-white p-6">
-            <div className="md:container mx-auto">
-                <div className="text-center md:text-start flex flex-col justify-center mb-5">
+        <footer className="bg-base w-full text-white p-2">
+            <div className="container mx-auto flex justify-between">
+                <div className="text-center md:text-start flex flex-col justify-center">
                     <div className="text-sm">
                         <Link href="/" className="items-center inline-flex">
                             <Image className="inline h-8 w-auto" alt="logo" src={logoImage}/>
@@ -19,7 +19,7 @@ export default function Footer() {
                         <p>Atakent mah. Mithatpaşa cad. Çağla Plaza Blok No: 116  İç kapı no:18  CEOTEKMER Ümraniye/İstanbul</p>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-5">
+                <div className="flex flex-col items-end justify-end gap-5">
                     <div>
                         <ul className="flex gap-5 text-3xl md:justify-end justify-center">
                             <li>

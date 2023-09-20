@@ -21,7 +21,9 @@ module.exports = {
         tertiary: '#764BE2',
         highlight: '#0D4E97',
         'card-border': '#ADCEFF',
-        'card-light': '#E4EFFF'
+        'card-light': '#E4EFFF',
+        base: '#2A2A2A',
+        background: '#E1E1E1'
       },
       data: {
         selected: 'selected="true"',

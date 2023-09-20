@@ -15,8 +15,8 @@ export default function Navbar() {
     }
 
     return (
-        <header className="bg-transparent fixed top-0 w-full backdrop-blur border-b-2 border-secondary z-20 px-5">
-            <nav className="flex justify-between m-6 group md:container mx-auto" data-isopen={isOpen}>
+        <header className="bg-base fixed top-0 w-full z-20 h-[40px] flex items-center">
+            <nav className="flex justify-between m-6 group items-center container mx-auto" data-isopen={isOpen}>
                 <Link href="/" className="inline-flex items-center gap-4">
                     <Image alt="logo" src={logoImage} className="h-8 w-auto"/>
                     <span className="font-bold text-2xl mr-5">KESiN</span>
@@ -31,11 +31,6 @@ export default function Navbar() {
                 </button>
                 <div className="hidden lg:block">
                     <ul className="gap-6 flex">
-                    <li>
-                            <NavLink href="/">
-                                Ana Sayfa
-                            </NavLink>
-                        </li>
                         <li>
                             <NavLink href="/about-us">
                                 Hakkımızda

@@ -13,12 +13,12 @@ export default function FeaturesCard({
 }) {
     return (
         <Card>
-            <div className="flex justify-center text-center items-center">
-                <div className="m-2 -mr-4 basis-2/3">
-                    <h4 className="text-xl font-bold my-2 text-highlight">{title}</h4>
-                    <p className="text-sm text-highlight">{children}</p>
+            <div className="flex flex-col justify-center text-center items-center max-w-[380px] mx-auto">
+                <Image src={image} alt="" className="h-[220px]"/>
+                <div className="m-8 basis-2/3">
+                    <h4 className="text-2xl font-bold my-8">{title}</h4>
+                    <p className="text-lg">{children}</p>
                 </div>
-                <Image src={image} alt="" className=""/>
             </div>
         </Card>
     )
