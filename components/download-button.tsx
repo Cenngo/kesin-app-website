@@ -12,7 +12,7 @@ export default function DownloadButton({
 }) {
     return (
         <Link href={href} className={className}>
-            <div className="flex justify-between border-2 border-white rounded-lg p-3 items-center gap-2 bg-[#212121] text-white shadow-lg">
+            <div className="flex justify-center border-2 border-white rounded-lg p-3 items-center gap-2 bg-[#212121] text-white shadow-lg">
                 {children}
             </div>
         </Link>

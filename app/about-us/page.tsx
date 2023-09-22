@@ -5,23 +5,23 @@ import peepsThreeImage from '../../public/peeps_3.png'
 
 export default function AboutUs() {
     return (
-        <main className="bg-landing-pattern lg:pt-12 pt-20">
-            <section className="py-6 min-h-screen flex md:container mx-auto">
-                <ul className="flex flex-col gap-5 mx-2 justify-center">
+        <main className="bg-background pt-[40px] px-1">
+            <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center">Hakkımızda</div>
+            <section className="container mx-auto max-w-[900px]">
+                <ul className="flex flex-col mx-2 justify-end">
                     <li>
                         <PeepsCard image={peepsOneImage} title="Biz Kimiz?">
                             Biz Türkiye’de yapılan çekilişlerin gerçekliğini, şeffaflığını ve güvenilirliğini sağlamak için çalışan bir grup insanız. Yapmak istediğimiz çekiliş   şeffaf, güvenilir ve katılımının kolay olmasını sağlamak, katılınan çekilişin sonucunu kolay öğrenebilmek, kimin kazandığını takip edebilmek,canlı yayınlar ile çekilişleri görünür kılmak.
                         </PeepsCard>
                     </li>
                     <li>
-                        <PeepsCard image={peepsTwoImage} title="Peki Bu Mümkün mü?">
-                            Tabii ki de mümkün! Bunu ücretsiz olarak başarabilmek için kurduğumuz bu platformda, çekiliş yapmak isteyen firmalarla görüşüp, onların çekilişlerini üstlenip, sizlerle paylaşıyoruz.
+                        <PeepsCard image={peepsTwoImage} title="Peki Bu Mümkün mü?" inverse>
+                            Tabii ki de mümkün! Bunu ücretsiz olarak başarabilmek için kurduğumuz bu platformda, çekiliş yapmak isteyen firmalarla siz kullanıcıları bir araya getiriyoruz. Böylece kullanıcılar  çekilişlerin hepsini görebiliyor, tekrar tekrar oturum açmadan çok kısa sürede çekilişlere katılabiliyor. 
                         </PeepsCard>
                     </li>
                     <li>
-                        <PeepsCard image={peepsThreeImage} title="Bu Arada Katılmak Ücretsiz!">
-                            Daha önce söylemiş olabiliriz ama tekrar söylemek istiyoruz kimin
-                            ÇEKİLİŞLERE KATILMAK “ÜCRETSİZ”
+                        <PeepsCard image={peepsThreeImage} title="İndirmek ve Çekilişlere Katılmak ÜCRETSİZ">
+                            Bu arada hatırlatmak isteriz ki çekilişlere katılmak tamamen ÜCRETSiZ ! Sadece belirli görevleri yerine getirerek çekilişlere ücretsiz katılmak için hemen KESiN’i indir !
                         </PeepsCard>
                     </li>
                 </ul>

@@ -12,7 +12,7 @@ export default function Footer() {
                             <Image className="inline h-8 w-auto" alt="logo" src={logoImage}/>
                             <span className="font-bold text-2xl mr-5">KESiN</span>
                         </Link>
-                        <div className="">© 2023 Kesin Tüm Hakları Saklıdır.</div>
+                        <div className="">© 2022 Kesin Tüm Hakları Saklıdır.</div>
                     </div>
                     <div className="text-xs text-slate-600 text-center md:text-start">
                         <p>Kesin Çekiliş Yazılım Teknolojileri A.Ş.</p>

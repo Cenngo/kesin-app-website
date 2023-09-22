@@ -29,7 +29,6 @@ export default function Home() {
               <div className="flex flex-col gap-3 justify-center items-center w-[298px] mx-auto mt-16 absolute top-20 -right-56">
                 <AppStoreBtn/>
                 <PlayStoreBtn/>
-                <AppGaleryButton/>
               </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ export default function ExploreButton({
 }) {
     return (
         <Link href={href} className={className}>
-            <div className="h-[60px] w-[178px] rounded-[20px] inline-flex  items-center text-b bg-background shadow justify-center hover:bg-white transition-all">
+            <div className="h-[60px] w-[178px] rounded-[20px] inline-flex items-center text-b hover:bg-background shadow justify-center bg-white transition-all">
                 <span className="transition z-10">{children}</span>
             </div>
         </Link>
