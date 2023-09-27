@@ -92,9 +92,9 @@ export default function ContactUs() {
                     </form>
                 </div>
                 <div className="md:order-1 relative flex flex-col justify-end items-center">
-                    <Image src={envelopeImage} alt="envelope" className="absolute w-full h-full top-0 left-0"/>
+                    <Image src={envelopeImage} alt="envelope" className="absolute lg:w-full lg:h-full lg:top-0 lg:left-0 right-0 w-48"/>
                     <div className="self-start">
-                        <div className="bg-[#fafafa] p-5 rounded-[20px] lg:w-[315px] lg:h-[100px] relative grow-0 text-b text-lg py-10 ml-[200px]">
+                        <div className="bg-[#fafafa] p-5 rounded-[20px] lg:w-[315px] lg:h-[100px] relative grow-0 text-b text-lg lg:py-10 ml-[200px]">
                             Merhaba,<br/>
                             Sana nasıl yardımcı olabilirim?
                             <div className="bg-[#fafafa] absolute w-[66px] h-[27px] left-0 -bottom-10 rounded-[10px]"></div>
