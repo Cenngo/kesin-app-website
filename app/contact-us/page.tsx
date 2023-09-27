@@ -39,7 +39,7 @@ export default function ContactUs() {
     return (
         <main className="bg-background pt-[40px] text-secondary px-1">
             <div className="text-center text-b rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center">İletişim</div>
-            <div className="container mx-auto grid grid-cols-2 place-items-stretch place-content-end mt-10">
+            <div className="container mx-auto grid lg:grid-cols-2 place-items-stretch place-content-end mt-10">
                 <div className="order-2 pb-5 flex justify-center">
                     <form className="bg-white shadow-2xl rounded-3xl w-full max-w-[492px] group p-6 text-xl text-b" onSubmit={handleSubmit(onSubmit)} ref={formRef}>
                         <div className="mb-5">
@@ -94,7 +94,7 @@ export default function ContactUs() {
                 <div className="md:order-1 relative flex flex-col justify-end items-center">
                     <Image src={envelopeImage} alt="envelope" className="absolute w-full h-full top-0 left-0"/>
                     <div className="self-start">
-                        <div className="bg-[#fafafa] p-5 rounded-[20px] w-[315px] h-[100px] relative grow-0 text-b text-lg py-10 ml-[200px]">
+                        <div className="bg-[#fafafa] p-5 rounded-[20px] lg:w-[315px] lg:h-[100px] relative grow-0 text-b text-lg py-10 ml-[200px]">
                             Merhaba,<br/>
                             Sana nasıl yardımcı olabilirim?
                             <div className="bg-[#fafafa] absolute w-[66px] h-[27px] left-0 -bottom-10 rounded-[10px]"></div>

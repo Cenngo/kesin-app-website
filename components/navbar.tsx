@@ -15,7 +15,7 @@ export default function Navbar() {
     }
 
     return (
-        <header className="bg-b fixed top-0 w-full z-20 h-[40px] flex items-center">
+        <header className="bg-b fixed top-0 w-full z-20 h-[40px] flex items-center px-2 lg:mx-0 z-50">
             <nav className="flex justify-between m-6 group items-center container mx-auto" data-isopen={isOpen}>
                 <Link href="/" className="inline-flex items-center gap-4">
                     <Image alt="logo" src={logoImage} className="h-8 w-auto"/>
@@ -49,7 +49,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="absolute group-data-open:opacity-100 opacity-0 group-data-open:-translate-x-full 
-                left-full bg-white h-screen text-secondary p-12 nav-shape pt-36 transition px-24">
+                left-full bg-white top-[50px] h-screen text-secondary p-12 nav-shape pt-36 transition px-24">
                     <ul className="flex flex-col gap-6">
                         <li>
                             <HamburgerLink href="/" onClick={closeNav}>

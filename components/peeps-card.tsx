@@ -18,8 +18,8 @@ export default function PeepsCard({
             <Image src={image} alt="" className="max-h-[250px] w-auto mx-4 self-end"/>
             <div className="w-full mx-w-[530px] mb-8">
                 <Card>
-                    <h6 className="text-2xl font-bold mb-8">{title}</h6>
-                    <p className="text-lg">{children}</p>
+                    <h6 className="lg:text-2xl text-base font-bold mb-4">{title}</h6>
+                    <p className="lg:text-lg text-xs">{children}</p>
                 </Card>
             </div>
         </div>
