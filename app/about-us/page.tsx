@@ -11,17 +11,17 @@ export default function AboutUs() {
                 <ul className="grid grid-cols-1 mx-2 auto-rows-fr place-items-stretch place-content-start">
                     <li className="h-full">
                         <PeepsCard image={peepsOneImage} title="Biz Kimiz?">
-                        Biz Türkiye’de yapılan çekilişlerin gerçekliğini, şeffaflığını ve güvenilirliğini sağlamak için çalışan bir grup insanız. Yapmak istediğimiz çekiliş   şeffaf, güvenilir ve katılımının kolay olmasını sağlamak, katılınan çekilişin sonucunu kolay öğrenebilmek, kimin kazandığını takip edebilmek,canlı yayınlar ile çekilişleri görünür kılmak.
+                        Biz, Türkiye'de düzenlenen çekilişlerin gerçekliğini, şeffaflığını ve güvenilirliğini sağlamaya çalışan bir grup insanız. Yürütmeyi planladığımız çekiliş kampanyalarını şeffaf, güvenilir ve katılımı kolay hale getirmeyi amaçlıyoruz. Katılanların çekiliş sonuçlarını kolayca öğrenebilmelerini, kazananları takip edebilmelerini ve çekilişleri canlı yayınlarla görünür kılmayı hedefliyoruz.
                         </PeepsCard>
                     </li>
                     <li className="h-full">
                         <PeepsCard image={peepsTwoImage} title="Peki Bu Mümkün mü?" inverse>
-                        Tabii ki de mümkün! Bunu ücretsiz olarak başarabilmek için kurduğumuz bu platformda, çekiliş yapmak isteyen firmalarla siz kullanıcıları bir araya getiriyoruz. Böylece kullanıcılar  çekilişlerin hepsini görebiliyor, tekrar tekrar oturum açmadan çok kısa sürede çekilişlere katılabiliyor. 
+                        Tabii ki mümkün! Bunu ücretsiz olarak başarabilmek için kurduğumuz bu platformda, çekiliş yapmak isteyen firmaları ve siz kullanıcıları bir araya getiriyoruz. Böylece kullanıcılar, tüm çekilişleri görebilir, tek oturumla hızla çekilişlere katılabilir ve sonuçları takip edebilirler.
                         </PeepsCard>
                     </li>
                     <li className="h-full">
                         <PeepsCard image={peepsThreeImage} title="İndirmek ve Çekilişlere Katılmak ÜCRETSİZ">
-                        Bu arada hatırlatmak isteriz ki çekilişlere katılmak tamamen ÜCRETSiZ ! Sadece belirli görevleri yerine getirerek çekilişlere ücretsiz katılmak için hemen KESiN’i indir !
+                        Bu arada hatırlatmak isteriz ki çekilişlere katılmak tamamen ÜCRETSİZ! Sadece belirli görevleri yerine getirerek çekilişlere ücretsiz katılmak için hemen KESİN'i indirebilirsiniz!
                         </PeepsCard>
                     </li>
                 </ul>
