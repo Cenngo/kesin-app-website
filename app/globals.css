@@ -29,3 +29,7 @@ body {
 .nav-shape {
   clip-path: path('M354 932H10V141.066C10 141.066 10.0001 75.571 182 75.571C354 75.571 354 10.0757 354 10.0757V932Z');
 }
+
+details summary::-webkit-details-marker {
+  display:none;
+}
