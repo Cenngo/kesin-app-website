@@ -41,7 +41,7 @@ export default function ContactUs() {
 
     return (
         <main className="bg-background pt-[40px] text-secondary px-1">
-            <div className="text-center text-b rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center text-2xl">İletişim</div>
+            <div className="text-center text-b rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[60px] flex items-center justify-center text-2xl">İletişim</div>
             <div className="container mx-auto grid lg:grid-cols-2 place-items-stretch place-content-end mt-10">
                 <div className="order-2 pb-5 flex justify-center">
                     <form className="bg-white shadow-2xl rounded-3xl w-full max-w-[492px] group p-6 text-xl text-b" onSubmit={handleSubmit(onSubmit)} ref={formRef}>

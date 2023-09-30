@@ -2,7 +2,7 @@ export default function Tos() {
     return (
         <main className="bg-background py-[40px]">
             <div className="container mx-auto text-black">
-            <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center text-2xl">Aydınlatma Metni</div>
+            <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[60px] flex items-center justify-center text-2xl">Aydınlatma Metni</div>
                 <div className="rounded-[20px] bg-white p-10 text-center">
                 KULLANICI VE KATILIMCI AYDINLATMA METNİ<br/>
 Değerli Kullanıcı/Katılımcı;<br/>
