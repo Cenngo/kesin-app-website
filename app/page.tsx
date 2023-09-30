@@ -12,13 +12,16 @@ import FeaturesCard from '@/components/features-card'
 import PeepsCard from '@/components/peeps-card'
 import ScrollIndicator from '@/components/scroll-indicator'
 import AppGaleryButton from '@/components/app-galery-button'
-import mobileBackdropImage from '../public/mobile_backdrop.png'
+import mobileBackdropImage from '../public/mobile-backdrop.svg'
 
 export default function Home() {
   return (
     <main className="bg-background min-h-screen items-center justify-betweeen">
       <section className="min-h-screen flex flex-col justify-center items-center gap-4 pb-5 relative">
-        <Image src={divier} alt='divider' className="w-full absolute top-0 left-0 hidden lg:block min-h-[370px]"/>
+        <div>
+          <div className='bg-[#fafafa] h-[200px] top-0 left-0 absolute w-full z-10 hidden lg:block'></div>
+          <Image src={divier} alt='divider' className="w-full absolute top-0 left-0 hidden lg:block h-[602px]"/>
+        </div>
         <div className="mb-3 relative lg:z-20 pt-10 flex flex-col-reverse lg:block">
             <div className="text-b max-w-[657px] mb-10 flex flex-col justify-center item-center">
               <h1 className="capitalize lg:text-5xl text-4xl font-bold text-center lg:my-10 mb-5 relative z-20">Yeni Nesil Çekiliş Platformu</h1>
