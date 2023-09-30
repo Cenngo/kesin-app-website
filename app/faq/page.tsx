@@ -9,7 +9,7 @@ export default function FAQ() {
 
     return (
         <main className="text-b min-h-screen bg-background pt-[40px] py-20 px-1">
-            <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center">Sıkça Sorulan Sorular</div>
+            <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[48px] flex items-center justify-center text-2xl">Sıkça Sorulan Sorular</div>
             <div className="md:container mx-auto">
                 <section className="">
                     <ul className="flex justify-around">

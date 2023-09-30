@@ -2,10 +2,11 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import logoImage from "../public/logo.png"
+import logoImage from "../public/logo.svg"
 import HamburgerLink from "./hamburger-link"
 import { useState } from "react"
 import NavLink from "./nav-link"
+import asideImage from "../public/aside.svg"
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,22 +16,22 @@ export default function Navbar() {
     }
 
     return (
-        <header className="bg-b fixed top-0 w-full z-20 h-[40px] flex items-center px-2 lg:mx-0 z-50">
+        <header className="bg-b fixed top-0 w-full h-[40px] flex items-center px-2 lg:mx-0 z-50">
             <nav className="flex justify-between m-6 group items-center container mx-auto" data-isopen={isOpen}>
                 <Link href="/" className="inline-flex items-center gap-4">
                     <Image alt="logo" src={logoImage} className="h-8 w-auto"/>
                     <span className="font-bold text-2xl mr-5">KESiN</span>
                 </Link>
-                <button onClick={() => setIsOpen(!isOpen)} className="block lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 group-data-open:hidden">
+                <button onClick={() => setIsOpen(!isOpen)} className="block lg:hidden text-black bg-white rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-data-open:hidden">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 group-data-open:block hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-data-open:block hidden">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
                 <div className="hidden lg:block">
-                    <ul className="gap-6 flex">
+                    <ul className="gap-10 flex">
                         <li>
                             <NavLink href="/about-us">
                                 Hakkımızda
@@ -43,14 +44,15 @@ export default function Navbar() {
                         </li>
                         <li>
                             <NavLink href="/contact-us">
-                                İletişim
+                                Bize Ulaşın
                             </NavLink>
                         </li>
                     </ul>
                 </div>
-                <div className="absolute group-data-open:opacity-100 opacity-0 group-data-open:-translate-x-full 
-                left-full bg-white top-[50px] h-screen text-secondary p-12 nav-shape pt-36 transition px-24">
-                    <ul className="flex flex-col gap-6">
+                <div className="absolute group-data-open:opacity-100 opacity-0 group-data-open:-translate-x-full
+                left-full top-[50px] h-screen text-black p-12 mt-36 transition px-24">
+                    <Image src={asideImage} alt="aside" className="absolute right-0 -top-[113px] w-[450px] z-0"/>
+                    <ul className="flex flex-col gap-6 relative z-10">
                         <li>
                             <HamburgerLink href="/" onClick={closeNav}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -80,7 +82,7 @@ export default function Navbar() {
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
                                 </svg>
-                                İletişim
+                                Bize Ulaşın
                             </HamburgerLink>
                         </li>
                     </ul>

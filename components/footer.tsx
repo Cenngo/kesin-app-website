@@ -1,15 +1,15 @@
 import Link from "next/link"
 import Image from "next/image"
-import logoImage from "../public/logo.png"
+import logoImage from "../public/logo.svg"
 
 export default function Footer() {
     return (
         <footer className="bg-b w-full text-white p-2">
-            <div className="container mx-auto lg:flex-row flex-col justify-between">
+            <div className="container mx-auto flex lg:flex-row flex-col justify-between">
                 <div className="text-center md:text-start flex flex-col justify-center lg:mb-0 mb-5">
                     <div className="text-sm">
                         <Link href="/" className="items-center inline-flex">
-                            <Image className="inline h-8 w-auto" alt="logo" src={logoImage}/>
+                            <Image className="inline h-8 w-auto mr-3" alt="logo" src={logoImage}/>
                             <span className="font-bold text-2xl mr-5">KESiN</span>
                         </Link>
                         <div className="">© 2022 Kesin Tüm Hakları Saklıdır.</div>
@@ -69,7 +69,7 @@ export default function Footer() {
                     <div>
                         <ul className="md:flex text-sm text-center ml-auto">
                             <li>
-                                <Link href="/tos" className="px-2 hover:text-slate-300">Kullanım Koşulları ve Gizlilik Politikası</Link>
+                                <Link href="/tos" className="px-2 hover:text-slate-300">Aydınlatma Metni</Link>
                             </li>
                             <li className="nav-item">
                                 <Link href="/about-us" className="px-2 hover:text-slate-300">Hakkımızda</Link>

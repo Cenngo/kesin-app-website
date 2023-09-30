@@ -10,7 +10,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata = {
   title: 'KESiN',
-  description: 'Yeni Nesil Çekiliş Platformu',
+  description: 'Yeni Nesil Çekiliş Platformu'
 }
 
 export default function RootLayout({
