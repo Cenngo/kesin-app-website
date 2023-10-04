@@ -38,7 +38,7 @@ export default function Home() {
             </div>
         </div>
         <Image src={mobileBackdropImage} alt='mobile-backdrop' className='w-full xl:hidden block absolute z-10 top-[280px]'/>
-        <div className="absolute bottom-12 w-full flex justify-center">
+        <div className="absolute bottom-24 w-full flex justify-center z-40">
           <ScrollIndicator />
         </div>
       </section>
