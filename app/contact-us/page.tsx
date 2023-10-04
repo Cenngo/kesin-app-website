@@ -40,7 +40,7 @@ export default function ContactUs() {
     }
 
     return (
-        <main className="bg-background pt-[40px] text-secondary px-1">
+        <main className="bg-background pt-[40px] text-secondary px-1 min-h-[96vh]">
             <div className="text-center text-b rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[60px] flex items-center justify-center text-2xl">İletişim</div>
             <div className="container mx-auto grid lg:grid-cols-2 place-items-stretch place-content-end mt-10">
                 <div className="order-2 pb-5 flex justify-center">
@@ -94,13 +94,13 @@ export default function ContactUs() {
                             </p>}
                         </div>
                         <div className="mb-5">
+                            <Link href="/tos" className="underline text-sm">Aydınlatma metnini okumak için tıklayınız.</Link>
+                        </div>
+                        <div className="mb-5">
                             <input type="submit" className="h-[60px] w-[178px] rounded-[20px] inline-flex  items-center text-b hover:bg-background shadow-2xl justify-center bg-white transition-all disabled:bg-white/50 data-[submitted=true]:bg-green-500 data-[submitted=true]:text-white" data-submitted={status.submitted} value={status.submitted ? "Bitti." : "Gönder"} disabled={status.submitted}/>
                             {status.submitted && status.info.error && (
                                 <span className="bg-red-100 border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">{status.info.msg}</span>
                             )}
-                        </div>
-                        <div className="mb-5">
-                            <Link href="/tos" className="underline">Aydınlatma metnini okumak için tıklayınız.</Link>
                         </div>
                     </form>
                 </div>

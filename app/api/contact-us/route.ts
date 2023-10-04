@@ -26,6 +26,11 @@ export async function POST(req: Request): Promise<Response> {
                             "inline": true
                         },
                         {
+                            "name": `Soyad`,
+                            "value": body.surname,
+                            "inline": true
+                        },
+                        {
                             "name": `Email`,
                             "value": body.email
                         },

@@ -75,7 +75,7 @@ export default function Footer() {
                                 <Link href="/about-us" className="px-2 hover:text-slate-300">Hakkımızda</Link>
                             </li>
                             <li>
-                                <Link href="/contact-us" className="px-2 hover:text-slate-300">İletişim</Link>
+                                <Link href="/contact-us" className="px-2 hover:text-slate-300">Bize Ulaşın</Link>
                             </li>
                             <li className="nav-item">
                                 <Link href="/faq" className="px-2 hover:text-slate-300">SSS</Link>
