@@ -60,7 +60,7 @@ export const faqs =[
         questions: [
             {
                 question: "Neden size güveneyim ?",
-                answer: "Bizim işimizin güvencesi sizden geliyor! Bu çekilişler düzenli gerçekleşmeli ki bizler de daha çok çekiliş yapma fırsatı yakalayalım. Tamda bu sebepten biz işimizin en iyisini yapmak için var gücümüzle çalışıyoruz. "
+                answer: "Bizim işimizin güvencesi sizden geliyor! Bu çekilişler düzenli gerçekleşmeli ki bizler de daha çok çekiliş yapma fırsatı yakalayalım. Tam da bu sebepten biz işimizin en iyisini yapmak için var gücümüzle çalışıyoruz. "
             },
 
             {

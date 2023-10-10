@@ -16,7 +16,7 @@ export default function Navbar() {
     }
 
     return (
-        <header className="bg-b fixed top-0 w-full h-[40px] flex items-center px-2 lg:mx-0 z-50">
+        <header className="bg-b fixed top-0 w-full h-[40px] flex items-center px-2 lg:mx-0 z-50 text-white">
             <nav className="flex justify-between m-6 group items-center container mx-auto" data-isopen={isOpen}>
                 <Link href="/" className="inline-flex items-center gap-4">
                     <Image alt="logo" src={logoImage} className="h-8 w-auto"/>

@@ -45,7 +45,7 @@ export default function ContactUs() {
             <div className="container mx-auto grid lg:grid-cols-2 place-items-stretch place-content-end mt-10">
                 <div className="order-2 pb-5 flex justify-center">
                     <form className="bg-white shadow-2xl rounded-3xl w-full max-w-[492px] group p-6 text-xl text-b" onSubmit={handleSubmit(onSubmit)} ref={formRef}>
-                        <div className="mb-5 flex gap-2">
+                        <div className="mb-5 flex gap-2 justify-stretch">
                             <span>
                                 <label htmlFor="name" className="block after:content-['*'] after:ml-0.5">Ad</label>
                                 <input type="text" id="name" className="mt-6 px-3 py-2 bg-[#e1e1e1] shadow-2xl h-[44px]

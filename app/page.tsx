@@ -38,16 +38,17 @@ export default function Home() {
             </div>
         </div>
         <Image src={mobileBackdropImage} alt='mobile-backdrop' className='w-full xl:hidden block absolute z-10 top-[280px]'/>
-        <div className="bottom-24 w-full flex justify-center z-40 sticky">
+        <div className="bottom-24 w-full flex lg:justify-center justify-end lg:m-0 mr-10 z-40 sticky">
           <ScrollIndicator />
         </div>
       </section>
       <section className="flex flex-col justify-between items-center min-h-screen md:min-h-fit bg-[#f1f1f1] py-24">
         <div className="container mx-auto">
-          <h4 className="lg:text-5xl text-2xl font-bold text-center mb-10 text-b max-w-[726px] mx-auto">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
+          <h4 className="lg:text-5xl text-2xl font-bold text-center mb-24 text-b max-w-[726px] mx-auto">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
           <ul className="gap-5 flex flex-col lg:flex-row mx-2 justify-center place-items-center items-stretch">
               <li className="flex-1 basis-0">
                   <FeaturesCard image={glassImage} title="Görebilmek">
+                    <br/>
                     Ana ekrandaki “Çekilişler” butonuyla aktif olan çekilişlerin hepsini görebilirsin
                   </FeaturesCard>
               </li>
@@ -58,6 +59,7 @@ export default function Home() {
               </li>
               <li className="flex-1 basis-0">
                   <FeaturesCard image={dartImage} title="Takip Edebilmek">
+                    <br/>
                     “Katıldığım Çekilişler” butonunu kullanarak çekiliş sonuçlarını takip edebilirsin
                   </FeaturesCard>
               </li>
