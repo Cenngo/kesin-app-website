@@ -48,10 +48,10 @@ export default function ContactUs() {
                         <div className="mb-5 flex gap-2 justify-stretch">
                             <span>
                                 <label htmlFor="name" className="block after:content-['*'] after:ml-0.5">Ad</label>
-                                <input type="text" id="name" className="mt-6 px-3 py-2 bg-[#e1e1e1] shadow-2xl h-[44px]
-                                border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
-                                inline w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                                data-invalid:text-pink-600 peer" placeholder=""
+                                <input type="text" id="name" className="mt-6 px-3 py-2 bg-[#f1f1f1] shadow-2xl h-[44px] border
+                                border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
+                                inline w-full rounded-[10px] sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
+                                data-invalid:text-pink-600 peer" placeholder="Adınız"
                                     {...register("name", {required: true})} data-invalid={!!errors.name}/>
                                 {errors.name && <p className="mt-2 text-pink-600 text-sm">
                                     Lütfen doldurunuz.
@@ -59,10 +59,10 @@ export default function ContactUs() {
                             </span>
                             <span>
                                 <label htmlFor="surname" className="block after:content-['*'] after:ml-0.5">Soyad</label>
-                                <input type="text" id="surname" className="mt-6 px-3 py-2 bg-[#e1e1e1] shadow-2xl h-[44px]
-                                border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
+                                <input type="text" id="surname" className="mt-6 px-3 py-2 bg-[#f1f1f1] shadow-2xl h-[44px] border
+                                border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                                 inline w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                                data-invalid:text-pink-600 peer" placeholder=""
+                                data-invalid:text-pink-600 peer" placeholder="Soyadınız"
                                     {...register("surname", {required: true})} data-invalid={!!errors.surname}/>
                                 {errors.name && <p className="mt-2 text-pink-600 text-sm">
                                     Lütfen doldurunuz.
@@ -71,10 +71,10 @@ export default function ContactUs() {
                         </div>
                         <div className="mb-5">
                             <label htmlFor="email" className="block after:content-['*'] after:ml-0.5">Kişisel E-Posta</label>
-                            <input type="email" id="email" className="mt-6 px-3 py-2 bg-[#e1e1e1] shadow-2xl h-[44px]
-                            border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
+                            <input type="email" id="email" className="mt-6 px-3 py-2 bg-[#f1f1f1] shadow-2xl h-[44px] border
+                            border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                             block w-full rounded-md sm:text-sm focus:ring-1 flex-shrink data-invalid:border-pink-500
-                            data-invalid:text-pink-600 peer z-0" placeholder="" data-invalid={!!errors.email}
+                            data-invalid:text-pink-600 peer z-0" placeholder="E-Postanız" data-invalid={!!errors.email}
                                 {...register("email", {required: true})}/>
                             {errors.email && <p className="mt-2 text-pink-600 text-sm">
                                 Lütfen doldurunuz.
@@ -84,8 +84,8 @@ export default function ContactUs() {
                             <label htmlFor="details" className="block after:content-['*'] after:ml-0.5">
                                 Detaylar
                             </label>
-                            <textarea className="mt-6 px-3 py-2 bg-[#e1e1e1] h-[293px] shadow-2xl
-                            border-slate-300 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
+                            <textarea className="mt-6 px-3 py-2 bg-[#f1f1f1] h-[293px] shadow-2xl border
+                            border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                             block rounded-md sm:text-sm focus:ring-1 w-full flex-shrink data-invalid:border-pink-500
                             data-invalid:text-pink-600 peer" data-invalid={!!errors.details}
                                 {...register("details", {required: true})}></textarea>

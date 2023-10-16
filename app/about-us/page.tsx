@@ -5,7 +5,7 @@ import peepsThreeImage from '../../public/peeps_3.png'
 
 export default function AboutUs() {
     return (
-        <main className="bg-background pt-[40px] px-1 min-h-screen">
+        <main className="bg-background pt-[40px] px-1">
             <div className="text-center text-b mb-12 rounded-b-[20px] bg-[#fafafa] w-[345px] mx-auto h-[60px] flex items-center justify-center text-2xl">Hakkımızda</div>
             <section className="container mx-auto max-w-[900px]">
                 <ul className="grid grid-cols-1 mx-2 auto-rows-fr place-items-stretch place-content-start">
