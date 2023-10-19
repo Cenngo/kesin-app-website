@@ -4,7 +4,7 @@ import logoImage from "../public/logo.svg"
 
 export default function Footer() {
     return (
-        <footer className="bg-b w-full text-white p-2">
+        <footer className="bg-b w-full text-white p-2 grow">
             <div className="container mx-auto flex lg:flex-row flex-col justify-between">
                 <div className="text-center md:text-start flex flex-col justify-center lg:mb-0 mb-5">
                     <div className="text-sm">

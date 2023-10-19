@@ -19,8 +19,8 @@ export default function Home() {
     <main className="bg-background min-h-screen items-center justify-betweeen">
       <section className="min-h-screen flex flex-col justify-center items-center gap-4 pb-5 relative">
         <Image src={divier} alt='divider' className="w-full absolute top-0 left-0 hidden xl:block min-w-[570px]"/>
-        <div className="mb-3 relative xl:z-20 pt-10 flex flex-col-reverse xl:block">
-            <div className="text-b max-w-[657px] mb-10 flex flex-col justify-center item-center">
+        <div className="mb-3 relative xl:z-20 pt-10 flex flex-col-reverse xl:flex-col">
+            <div className="text-b max-w-[657px] mb-10 flex flex-col justify-center item-center text-center self-center">
               <h1 className="capitalize xl:text-5xl text-4xl font-bold text-center xl:my-10 mb-5 relative z-20">Yeni Nesil Çekiliş Platformu</h1>
               <h3 className="text-lg text-center mx-5 mb-9 relative z-20">KESiN kullanıcıları çekilişleri rahatlıkla görebiliyor, katılım koşullarını uygulayarak hızlıca katılabiliyor ve sonuçları kolaylıkla takip edebiliyor.</h3>
               <ExploreButton href="/about-us" className="mx-auto relative z-20 mb-9">Keşfet</ExploreButton>
@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center relative">
-              <Image src={giftImage} alt='gift' className='max-h-[720px] w-auto mx-auto xl:-ml-5 -mt-12 xl:mb-0 -mb-8 xl:-mt-36 relative top-[40px] xl:block'/>
+              <Image src={giftImage} alt='gift' className='max-h-[720px] w-auto mx-auto -mb-8 xl:-mt-36 relative top-[40px] xl:block'/>
               <div className="flex-col gap-3 justify-center items-center w-[320px] mx-auto mt-16 xl:absolute xl:top-20 xl:-right-56 relative z-20 hidden xl:flex">
                 <AppStoreBtn/>
                 <PlayStoreBtn/>

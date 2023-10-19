@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-[#fafafa]">
-      <body className={`${beVietnamPro.className}`}>
+      <body className={`${beVietnamPro.className} min-h-screen flex flex-col`}>
         <Navbar/>
         {children}
         <Footer/>

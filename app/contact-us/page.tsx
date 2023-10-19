@@ -87,7 +87,7 @@ export default function ContactUs() {
                             <textarea className="mt-6 px-3 py-2 bg-[#f1f1f1] h-[293px] shadow-2xl border
                             border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
                             block rounded-md sm:text-sm focus:ring-1 w-full flex-shrink data-invalid:border-pink-500
-                            data-invalid:text-pink-600 peer" data-invalid={!!errors.details}
+                            data-invalid:text-pink-600 peer resize-none" data-invalid={!!errors.details}
                                 {...register("details", {required: true})}></textarea>
                             {errors.details && <p className="mt-2 text-pink-600 text-sm">
                                 Lütfen doldurunuz.
