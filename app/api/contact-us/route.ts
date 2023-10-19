@@ -1,10 +1,3 @@
-import rateLimit from '@/app/utils/rate-limit'
-
-const limiter = rateLimit({
-    interval: 60 * 1000, // 60 seconds
-    uniqueTokenPerInterval: 10, // Max 500 users per second
-})
-
 export async function POST(req: Request, res: Response): Promise<Response> {
     const body = await req.json();
 
