@@ -46,7 +46,7 @@ export default function ContactUs() {
                 <div className="order-2 pb-5 flex justify-center">
                     <form className="bg-white shadow-2xl rounded-3xl w-full max-w-[492px] group p-6 text-xl text-b" onSubmit={handleSubmit(onSubmit)} ref={formRef}>
                         <div className="mb-5 flex gap-2 justify-stretch">
-                            <span>
+                            <span className="basis-0 flex-1">
                                 <label htmlFor="name" className="block after:content-['*'] after:ml-0.5">Ad</label>
                                 <input type="text" id="name" className="mt-6 px-3 py-2 bg-[#f1f1f1] shadow-2xl h-[44px] border
                                 border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
@@ -57,7 +57,7 @@ export default function ContactUs() {
                                     Lütfen doldurunuz.
                                 </p>}
                             </span>
-                            <span>
+                            <span className="basis-0 flex-1">
                                 <label htmlFor="surname" className="block after:content-['*'] after:ml-0.5">Soyad</label>
                                 <input type="text" id="surname" className="mt-6 px-3 py-2 bg-[#f1f1f1] shadow-2xl h-[44px] border
                                 border-[#BCBCBC] placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-sky-500
