@@ -42,7 +42,7 @@ export default function Home() {
           <ScrollIndicator />
         </div>
       </section>
-      <section className="flex flex-col justify-between items-center min-h-screen md:min-h-fit bg-[#f1f1f1] py-24">
+      <section className="flex flex-col justify-between items-center min-h-screen md:min-h-fit bg-[#f1f1f1] py-24" id="cards-section">
         <div className="container mx-auto">
           <h4 className="lg:text-5xl text-2xl font-bold text-center mb-12 text-b max-w-[726px] mx-auto lg:leading-relaxed leading-relaxed">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
           <ul className="gap-5 flex flex-col lg:flex-row mx-2 justify-center place-items-center items-stretch">
