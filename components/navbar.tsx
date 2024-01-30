@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import logoImage from "../public/logo.svg"
+import logoImage from "../public/logo.png"
 import HamburgerLink from "./hamburger-link"
 import { useState } from "react"
 import NavLink from "./nav-link"
