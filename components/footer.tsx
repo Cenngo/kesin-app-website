@@ -12,11 +12,11 @@ export default function Footer() {
                             <Image className="inline h-8 w-auto mr-3" alt="logo" src={logoImage}/>
                             <span className="font-bold text-2xl mr-5">KESiN</span>
                         </Link>
-                        <div className="">© 2022 Kesin Tüm Hakları Saklıdır.</div>
+                        <div className="">© 2024 Kesin Tüm Hakları Saklıdır.</div>
                     </div>
                     <div className="text-xs text-slate-600 text-center md:text-start">
                         <p>Kesin Çekiliş Yazılım Teknolojileri A.Ş.</p>
-                        <p>Atakent mah. Mithatpaşa cad. Çağla Plaza Blok No: 116  İç kapı no:18  CEOTEKMER Ümraniye/İstanbul</p>
+                        <p>Atakent Mah. Mithatpaşa Cad. Çağla Plaza Blok No: 116  İç Kapı No:18  CEOTEKMER Ümraniye/İstanbul</p>
                     </div>
                 </div>
                 <div className="flex flex-col lg:items-end lg:justify-end gap-5">

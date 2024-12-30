@@ -23,7 +23,7 @@ export default function Home() {
             <div className="text-b max-w-[657px] mb-10 flex flex-col justify-center item-center text-center self-center">
               <h1 className="capitalize xl:text-5xl text-4xl font-bold text-center xl:my-10 mb-5 relative z-20">Yeni Nesil Çekiliş Platformu</h1>
               <h3 className="text-lg text-center mx-5 mb-9 relative z-20">KESiN kullanıcıları çekilişleri rahatlıkla görebiliyor, katılım koşullarını uygulayarak hızlıca katılabiliyor ve sonuçları kolaylıkla takip edebiliyor.</h3>
-              <ExploreButton href="/about-us" className="mx-auto relative z-20 mb-9">Keşfet</ExploreButton>
+              <ExploreButton href="#cards-section" className="mx-auto relative z-20 mb-9">Keşfet</ExploreButton>
               <div className="flex flex-col gap-3 justify-center items-center w-[320px] mx-auto xl:absolute xl:top-20 xl:-right-56 relative z-20 xl:hidden">
                 <AppStoreBtn/>
                 <PlayStoreBtn/>
@@ -47,20 +47,18 @@ export default function Home() {
           <h4 className="lg:text-5xl text-2xl font-bold text-center mb-12 text-b max-w-[726px] mx-auto lg:leading-relaxed leading-relaxed">KESiN’le çekilişlere katılmak hem KOLAY hem de ÜCRETSİZ</h4>
           <ul className="gap-5 flex flex-col lg:flex-row mx-2 justify-center place-items-center items-stretch">
               <li className="flex-1 basis-0">
-                  <FeaturesCard image={glassImage} title="Görebilmek">
-                    <br/>
-                    Ana ekrandaki “Çekilişler” butonuyla aktif olan çekilişlerin hepsini görebilirsin
+                  <FeaturesCard image={glassImage} title="İncelemek">
+                    Hızlıca üye ol, favori markalarınızın çekilişlerini incele
                   </FeaturesCard>
               </li>
               <li className="flex-1 basis-0">
-                  <FeaturesCard image={gameboyImage} title="Katılabilmek">
-                    Çekilişlere ücretsiz bir şekilde reklam izleyerek veya çeşitli görevleri yaparak katılabilirsin
+                  <FeaturesCard image={gameboyImage} title="Takip Edebilmek">
+                    Çekilişlere ücretsiz katıl, katıldığın gibi indirim kuponu kazan  
                   </FeaturesCard>
               </li>
               <li className="flex-1 basis-0">
-                  <FeaturesCard image={dartImage} title="Takip Edebilmek">
-                    <br/>
-                    “Katıldığım Çekilişler” butonunu kullanarak çekiliş sonuçlarını takip edebilirsin
+                  <FeaturesCard image={dartImage} title="Görebilmek">
+                    İndirim kuponlarınızı favori mağazalarınızda kullanın
                   </FeaturesCard>
               </li>
           </ul>

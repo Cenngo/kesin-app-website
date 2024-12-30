@@ -4,11 +4,7 @@ export const faqs =[
         questions: [
             {
                 question: "KESiN nedir ?",
-                answer: "KESiN herkesin ücretsiz çekilişlere ulaşabileceği, markaların kampanyalarını yürütebileceği mobil uygulama platformudur."
-            },
-            {
-                question: "Kupon nedir ?",
-                answer: "Kupon , KESiN uygulamasında bazı çekilişlere katılmak için ihtiyacın olan birimdir."
+                answer: "KESiN birçok markanın çekilişlerini kolayca yönettiği, kullanıcıların ücretsiz çekilişlere katılma fırsatlarını değerlendirip indirim kuponları kazanabildiği mobil uygulamadır."
             },
             {
                 question: "Yani markaların yaptığı çekilişlere katılmak tamamen ücretsiz ?",
@@ -25,16 +21,11 @@ export const faqs =[
         questions: [
             {
                 question: "KESiN’de aynı anda kaç farklı çekilişe katılabilirim ?",
-                answer: "İlk aşamada senden beklediğimiz görevleri tamamlayana kadar 3 çekilişe aynı anda katılma hakkınız vardır. Görevler tamamlandıkça aynı anda katılacağınız çekiliş sayısı artmaktadır."
-            },
-
-            {
-                question: "İzleyecek reklam kalmadı ne yapmalıyım ?",
-                answer: "İster görevler sekmesinden kupon kazanmaya devam edebilir, istersen reklamların geri yükleme süresi dolduktan sonra tekrar gelebilirsin."
+                answer: "Dileyiğin kadar çekilişe katılabilirsin. Herhangi bir katılım sınırı bulunmamaktadır."
             },
             {
                 question: "Çekilişlere nasıl katılabilirim ?",
-                answer: "Çekilişlere katılmanın birden çok yöntemi vardır. KESiN uygulamasında çekilişler sekmesinden istediğin çekilişe katılabilirsin. Unutma her çekilişin katılma koşulu birbirinden farklı. Bazen kuponunu harcayacaksın, bazen bir reklam izleyeceksin..."
+                answer: "Çekilişlere katılmanın birden çok yöntemi vardır. KESiN uygulamasında çekilişler sekmesinden istediğin çekilişe katılabilirsin. Unutma her çekilişin katılma koşulu birbirinden farklı. Bazen QR kodunu okutacaksın, bazen üründen çıkan kodu gireceksin."
             },
             {
                 question: "Çekilişi kimin kazandığını nereden görebilirim ?",
@@ -43,15 +34,11 @@ export const faqs =[
 
             {
                 question: "Çekilişi kazandım nasıl ödülümü alacağım ?",
-                answer: "Çekilişi teslim süreci ile ilgili bize sosyal medya hesaplarımızdan ulaştığınız sürece sizlerle gerekli iletişimi sağlayacağız."
+                answer: "Çekilişi teslim süreci ile ilgili bize uygulamamızın destek bölümünden ulaştığınız sürece sizlerle gerekli iletişimi sağlayacağız."
             },
             {
                 question: "En fazla kaç hesapla çekilişe katılabilirim ?",
-                answer: "KESiN’de bir telefonla birden fazla hesapla katılman mümkün değildir."
-            },
-            {
-                question: "Fazla kuponlarımla ne yapabilirim ?",
-                answer: "Elinde bulunan fazla kuponlarını market alanımızda bulunan ürünlerin satın almakta kullanabilirsin. Unutma market alanında sen ürün satın aldıkça daha fazla marka oraya ilgi gösterecektir !"
+                answer: "KESiN’de bir telefon numarasıyla yanlızca 1(bir) hesap açabilirsiniz. Açtığınız hesapla dilediğiniz kadar çekilişe katılabilirsiniz."
             },
         ]
     },
@@ -59,13 +46,13 @@ export const faqs =[
         category: "Gizlilik",
         questions: [
             {
-                question: "Neden size güveneyim ?",
-                answer: "Bizim işimizin güvencesi sizden geliyor! Bu çekilişler düzenli gerçekleşmeli ki bizler de daha çok çekiliş yapma fırsatı yakalayalım. Tam da bu sebepten biz işimizin en iyisini yapmak için var gücümüzle çalışıyoruz. "
+                question: "KESiNlikle Güvenebilir miyim ?",
+                answer: "Evet. Çünkü sizin güveniniz bizim önceliğimiz! Çekilişlerin düzenli ve başarılı bir şekilde gerçekleşmesi, bize daha fazla fırsat yaratma şansı sunuyor. Bu yüzden KESiN ekibi olarak, en iyi deneyimi sunmak için var gücümüzle çalışıyor ve güvenilir bir platform sağlıyoruz."
             },
 
             {
-                question: "KESiN KVKK uyumlu bir uygulama mıdır ?",
-                answer: "Elbette ki, Kişisel Verileri Koruma Kanunu (KVKK) şirketler için zorunlu bir yönetmeliktir. KESiN sizin bilginiz ve rızanız olmadan hiç bir bilgiyi almaz. Yine de soruların olursa bize info@kesin.app adresinden mail atabilirsin."
+                question: "KESiN KVKK uyumlu bir uygulama mı ?",
+                answer: "Evet, kesinlikle! Kişisel Verileri Koruma Kanunu'na (KVKK) tam uyumlu bir platformuz. Bilginiz ve izniniz olmadan asla veri toplamayız. Aklınıza takılan başka sorular varsa, bize her zaman info@kesin.app adresinden ulaşabilirsiniz!"
             }
         ]
     },
